@@ -40,6 +40,7 @@ ref table DateTableTemplate_fc9f60f7-2515-47fa-b71e-738afd48c878
 ref table LocalDateTable_b11c666a-7c10-4139-8e02-b585309b88ae
 ref table dCalendario
 ref table LocalDateTable_0d711d4a-95d2-4078-9d5c-c20d4fa25a66
+ref table Medidas
 
 ref cultureInfo pt-BR
 

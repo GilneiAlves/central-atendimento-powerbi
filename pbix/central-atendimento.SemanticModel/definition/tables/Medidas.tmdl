@@ -1,0 +1,18 @@
+table Medidas
+	lineageTag: 676efe43-27e6-4446-967f-81e0aeda31e1
+
+	column Medidas
+		formatString: 0
+		lineageTag: faa12b01-2b65-49f5-9932-1eeee4407c0b
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Medidas]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Medidas = calculated
+		mode: import
+		source = Row("Medidas", BLANK())
+
+	annotation PBI_Id = 54809a40f9f04032a22653b41ac01455
+
