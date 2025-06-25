@@ -17,11 +17,11 @@ table fAcoesChamado
 
 		annotation SummarizationSetBy = Automatic
 
-	column AnalistaAcaoID
+	column AnalistaID
 		dataType: string
 		lineageTag: 3ccdcfcd-7019-4ebd-bcab-84cf12568a31
 		summarizeBy: none
-		sourceColumn: AnalistaAcaoID
+		sourceColumn: AnalistaID
 
 		annotation SummarizationSetBy = Automatic
 
@@ -44,7 +44,7 @@ table fAcoesChamado
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"IDChamado", type text}, {"CodAcao", type text}, {"TipoAcao", type text}, {"CodAnalista", type text}, {"Analista", type text}, {"DuracaoMinutos", Int64.Type}}),
 				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"TipoAcao", "Analista"}),
-				    #"Colunas Renomeadas" = Table.RenameColumns(#"Colunas Removidas",{{"CodAcao", "AcaoID"}, {"CodAnalista", "AnalistaAcaoID"}})
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Colunas Removidas",{{"CodAcao", "AcaoID"}, {"CodAnalista", "AnalistaID"}})
 				in
 				    #"Colunas Renomeadas"
 

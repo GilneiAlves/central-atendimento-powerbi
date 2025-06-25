@@ -1,0 +1,91 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 237.36249596847074,
+            "y": 4.1432489714472922
+          },
+          "nodeIndex": "dAcoes",
+          "nodeLineageTag": "e037a74c-f20f-4b0b-aef2-596deae33526",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 1,
+          "expandedHeight": 128
+        },
+        {
+          "location": {
+            "x": 304.50993152949934,
+            "y": 538
+          },
+          "nodeIndex": "dAnalistas",
+          "nodeLineageTag": "7f82f4fe-ae4f-4cd3-8cfc-e9f42272a90d",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 2,
+          "expandedHeight": 152
+        },
+        {
+          "location": {
+            "x": 628,
+            "y": 0
+          },
+          "nodeIndex": "dCategorias",
+          "nodeLineageTag": "9d575caf-6c86-40eb-b51a-9b494db0c7c2",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 3,
+          "expandedHeight": 152
+        },
+        {
+          "location": {
+            "x": 14.166300353516363,
+            "y": 300.62545472196246
+          },
+          "nodeIndex": "fAcoesChamado",
+          "nodeLineageTag": "8a8bef14-59b7-4aa0-bcb1-77d4f5047816",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 668.44942454215982,
+            "y": 334.45961202102217
+          },
+          "nodeIndex": "fChamados",
+          "nodeLineageTag": "f600a829-d358-42e0-a684-f15dd3e7e0f9",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 5,
+          "expandedHeight": 248
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}

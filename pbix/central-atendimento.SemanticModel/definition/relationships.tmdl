@@ -15,7 +15,7 @@ relationship AutoDetected_d9a98fab-21b5-41f5-a46e-b160f5185d1a
 	fromColumn: fChamados.CategoriaID
 	toColumn: dCategorias.CategoriaID
 
-relationship AutoDetected_a7f78c2f-ef9a-49c1-b05a-344a7ea24b13
-	fromColumn: fAcoesChamado.IDChamado
-	toColumn: fChamados.IDChamado
+relationship 89d5f785-9884-c4fa-65f1-e40a10adb6bd
+	fromColumn: fAcoesChamado.AnalistaID
+	toColumn: dAnalistas.AnalistaID
 
