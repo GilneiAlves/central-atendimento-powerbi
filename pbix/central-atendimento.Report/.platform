@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "central-atendimento"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8c7e6c6e-2c4b-4bbd-a976-dfb4af3069aa"
+  }
+}
