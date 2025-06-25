@@ -1,0 +1,115 @@
+table dCalendario
+	lineageTag: 2398905b-32bc-40d9-b1b4-f53a85e4b0cb
+
+	column Date
+		formatString: General Date
+		lineageTag: 9117fa74-3d30-4121-9ef0-cdf656ef30d9
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: 525ece40-1377-4d80-ab77-f5f74b2f33c2
+			defaultHierarchy: LocalDateTable_0d711d4a-95d2-4078-9d5c-c20d4fa25a66.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ano
+		formatString: 0
+		lineageTag: 75eb314b-1dee-428c-9bd8-be4ee5971169
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Ano]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MesNumero
+		formatString: 0
+		lineageTag: fc234c7c-69dd-4251-a585-ffcce158d1c7
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [MesNumero]
+
+		annotation SummarizationSetBy = Automatic
+
+	column NomeMes
+		lineageTag: 4527741a-7bec-4b62-82f1-054b89c0aee6
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [NomeMes]
+
+		annotation SummarizationSetBy = Automatic
+
+	column NomeMesAbrev
+		lineageTag: b77c6dd7-ef6d-4b5e-ba9c-a6485a849532
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [NomeMesAbrev]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dia
+		formatString: 0
+		lineageTag: cad78a15-f954-4032-a2e8-32c70f73c10f
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Dia]
+
+		annotation SummarizationSetBy = Automatic
+
+	column DiaDaSemana
+		formatString: 0
+		lineageTag: dea2ed9d-09c0-4dc5-b360-032f6e2b48be
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [DiaDaSemana]
+
+		annotation SummarizationSetBy = Automatic
+
+	column NomeDiaDaSemana
+		lineageTag: 4ed8a62d-bff7-4f83-bb45-4f0a4526833f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [NomeDiaDaSemana]
+
+		annotation SummarizationSetBy = Automatic
+
+	column NomeDiaDaSemanaAbrev
+		lineageTag: 28301180-3458-4ec2-8524-002d8ba85aea
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [NomeDiaDaSemanaAbrev]
+
+		annotation SummarizationSetBy = Automatic
+
+	column DiaUtil
+		lineageTag: 64b8a74c-323d-436c-a20c-2b77791c3a57
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [DiaUtil]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dCalendario = calculated
+		mode: import
+		source =
+				
+				VAR MinAnoEmFChamados = DATE(YEAR(MIN (fChamados[DataAbertura])),1,1) // Primeiro dia do ano da data mínima
+				VAR MaxAnoEmFChamados = DATE(YEAR(MAX (fChamados[DataAbertura])),12,31) // Último dia do ano da data máxima
+				RETURN
+				ADDCOLUMNS (
+				    CALENDAR(MinAnoEmFChamados,MaxAnoEmFChamados), // Gera datas entre o início do primeiro ano e o fim do último ano
+				    "Ano", YEAR ( [Date] ),
+				    "MesNumero", MONTH ( [Date] ),
+				    "NomeMes", FORMAT ( [Date], "mmmm", "pt-BR" ), // Formatado "pt-BR"
+				    "NomeMesAbrev", FORMAT ( [Date], "mmm", "pt-BR" ), // Formatado "pt-BR"
+				    "Dia", DAY ( [Date] ),
+				    "DiaDaSemana", WEEKDAY ( [Date], 2 ), // 2 para Segunda=1, Domingo=7
+				    "NomeDiaDaSemana", FORMAT ( [Date], "dddd", "pt-BR" ), // Formatado em "pt-BR"
+				    "NomeDiaDaSemanaAbrev", FORMAT ( [Date], "ddd", "pt-BR" ), // Formatado "pt-BR"
+				    "DiaUtil", IF ( WEEKDAY ( [Date], 2 ) < 6, "Sim", "Não" ) // Leve em conta somente dias úteis de segunda a sexta, sem incluir feriados
+				)
+
+	annotation PBI_Id = fa904d2a63e5428180b00da8f2413c4a
+

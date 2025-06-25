@@ -19,3 +19,8 @@ relationship 89d5f785-9884-c4fa-65f1-e40a10adb6bd
 	fromColumn: fAcoesChamado.AnalistaID
 	toColumn: dAnalistas.AnalistaID
 
+relationship 525ece40-1377-4d80-ab77-f5f74b2f33c2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dCalendario.Date
+	toColumn: LocalDateTable_0d711d4a-95d2-4078-9d5c-c20d4fa25a66.Date
+
