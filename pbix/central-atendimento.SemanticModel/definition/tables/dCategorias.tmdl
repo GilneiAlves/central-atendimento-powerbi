@@ -1,0 +1,91 @@
+table dCategorias
+	lineageTag: 9d575caf-6c86-40eb-b51a-9b494db0c7c2
+
+	column CategoriaID
+		dataType: string
+		lineageTag: fdd0ce99-7fa2-4505-8cef-4328f4efa2b4
+		summarizeBy: none
+		sourceColumn: CategoriaID
+
+		annotation SummarizationSetBy = Automatic
+
+	column NomeCategoria
+		dataType: string
+		lineageTag: f4de8276-9698-4402-b622-a3e73995c24f
+		summarizeBy: none
+		sourceColumn: NomeCategoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column CategoriaPai
+		dataType: string
+		lineageTag: 83679c5b-4238-4af9-ad59-e119ce70f95e
+		summarizeBy: none
+		sourceColumn: CategoriaPai
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dCategorias = m
+		mode: import
+		queryGroup: 'Tabelas Dimensões'
+		source = ```
+				let
+				    Fonte = Excel.Workbook(File.Contents(Caminho&"Chamados.xlsx"), null, true),
+				    Sheet1_Sheet = Fonte{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+				    #"Outras Colunas Removidas" = Table.SelectColumns(#"Cabeçalhos Promovidos",{"Categoria", "NomeCategoria"}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Outras Colunas Removidas",{{"Categoria", "CategoriaID"}}),
+				    // Tratamento de texto, padronização dos dados.
+				    TratamentoTextoCategoria = Table.ReplaceValue(
+				    Table.ReplaceValue(
+				        Table.ReplaceValue(
+				            Table.ReplaceValue(
+				                Table.ReplaceValue(
+				                    Table.ReplaceValue(
+				                        #"Colunas Renomeadas",
+				                        "Segurança da Rede",
+				                        "Segurança Rede",
+				                        Replacer.ReplaceText,
+				                        {"NomeCategoria"}
+				                    ),
+				                    "Sisteemas",
+				                    "Sistema",
+				                    Replacer.ReplaceText,
+				                    {"NomeCategoria"}
+				                ),
+				                "Conectividad",
+				                "Conectividade",
+				                Replacer.ReplaceText,
+				                {"NomeCategoria"}
+				            ),
+				            "Conectividadee",
+				            "Conectividade",
+				            Replacer.ReplaceText,
+				            {"NomeCategoria"}
+				        ),
+				        "Sistema",
+				        "Sistemas",
+				        Replacer.ReplaceText,
+				        {"NomeCategoria"}
+				    ),
+				    "Sistemass",
+				    "Sistemas",
+				    Replacer.ReplaceText,
+				    {"NomeCategoria"}
+				),
+				    #"Duplicatas Removidas" = Table.Distinct(TratamentoTextoCategoria),
+				    // Adicionando uma coluna Categoria Pai.
+				    CategoriaPai = Table.AddColumn(#"Duplicatas Removidas", "CategoriaPai", each 
+				    if [NomeCategoria] = "Conectividade" then "Infraestrutura"
+				    else if [NomeCategoria] = "Segurança Rede" then "Infraestrutura"
+				    else if [NomeCategoria] = "Sistemas" then "Aplicações"
+				    else "Outros"),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(CategoriaPai,{{"CategoriaID", type text}, {"NomeCategoria", type text}, {"CategoriaPai", type text}})
+				in
+				    #"Tipo Alterado"
+				```
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

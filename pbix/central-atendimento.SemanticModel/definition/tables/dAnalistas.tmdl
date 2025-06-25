@@ -1,0 +1,48 @@
+table dAnalistas
+	lineageTag: 7f82f4fe-ae4f-4cd3-8cfc-e9f42272a90d
+
+	column AnalistaID
+		dataType: string
+		lineageTag: f1d80800-5461-4de5-87ff-96e387c7c8c9
+		summarizeBy: none
+		sourceColumn: AnalistaID
+
+		annotation SummarizationSetBy = Automatic
+
+	column NomeAnalista
+		dataType: string
+		lineageTag: 9a316684-285f-4f03-85fc-45cc96cfad9e
+		summarizeBy: none
+		sourceColumn: NomeAnalista
+
+		annotation SummarizationSetBy = Automatic
+
+	column FotoURL
+		dataType: string
+		lineageTag: ae334e75-7ff2-40d0-8459-df634f9cb322
+		summarizeBy: none
+		sourceColumn: FotoURL
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dAnalistas = m
+		mode: import
+		queryGroup: 'Tabelas Dimensões'
+		source =
+				let
+				    Fonte = Excel.Workbook(File.Contents(Caminho & "Chamados.xlsx"), null, true),
+				    Sheet1_Sheet = Fonte{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Cabeçalhos Promovidos",{"IDChamado", "DataAbertura", "Categoria", "NomeCategoria", "TempoAtendimento"}),
+				    #"Duplicatas Removidas" = Table.Distinct(#"Colunas Removidas"),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Duplicatas Removidas",{{"Analista", type text}, {"NomeAnalista", type text}}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Tipo Alterado",{{"Analista", "AnalistaID"}}),
+				    // Adicionando url das Imagens para cada analista.
+				    Adicionando_Imagens = Table.AddColumn(#"Colunas Renomeadas", "FotoURL", each if [NomeAnalista] = "Daenerys" then "https://encurtador.com.br/juUnV" else if [NomeAnalista] = "Tyrion" then "https://encurtador.com.br/ko8Ka" else if [NomeAnalista] = "Jon" then "https://encurtador.com.br/DchXs" else null, type text)
+				in
+				    Adicionando_Imagens
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,97 @@
+table fChamados
+	lineageTag: f600a829-d358-42e0-a684-f15dd3e7e0f9
+
+	column IDChamado
+		dataType: string
+		lineageTag: 7e3e7710-3dbf-41cc-8c53-4e3fc5923871
+		summarizeBy: none
+		sourceColumn: IDChamado
+
+		annotation SummarizationSetBy = Automatic
+
+	column DataAbertura
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 4970b37f-d11f-4b80-9d87-314dc1e75891
+		summarizeBy: none
+		sourceColumn: DataAbertura
+
+		variation Variation
+			isDefault
+			relationship: 778fd8ae-ca6c-421d-b3b8-e190d3c5f601
+			defaultHierarchy: LocalDateTable_b11c666a-7c10-4139-8e02-b585309b88ae.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column AnalistaID
+		dataType: string
+		lineageTag: d44d4275-cdb9-4b93-9b25-33d1dba9102f
+		summarizeBy: none
+		sourceColumn: AnalistaID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CategoriaID
+		dataType: string
+		lineageTag: d35c8c16-26bb-40dd-a1f1-5f050c989d2f
+		summarizeBy: none
+		sourceColumn: CategoriaID
+
+		annotation SummarizationSetBy = Automatic
+
+	column TempoAtendimento
+		dataType: int64
+		formatString: 0
+		lineageTag: 98f91bbe-b1de-4df4-b0f5-92ffed2a0dd6
+		summarizeBy: sum
+		sourceColumn: TempoAtendimento
+
+		annotation SummarizationSetBy = Automatic
+
+	column HoraAbertura
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: f81c8bc8-3c54-4661-85a6-0d6da9aec1db
+		summarizeBy: none
+		sourceColumn: HoraAbertura
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column PeriodoAbertura
+		dataType: string
+		lineageTag: 6f35817e-434a-447c-bc5a-6f1dd55102a9
+		summarizeBy: none
+		sourceColumn: PeriodoAbertura
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fChamados = m
+		mode: import
+		queryGroup: 'Tabelas Fatos'
+		source = ```
+				let
+				    Fonte = Excel.Workbook(File.Contents(Caminho&"Chamados.xlsx"), null, true),
+				    Sheet1_Sheet = Fonte{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Cabeçalhos Promovidos",{"NomeAnalista", "NomeCategoria"}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Colunas Removidas",{{"Analista", "AnalistaID"}, {"Categoria", "CategoriaID"}}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Colunas Renomeadas",{{"IDChamado", type text}, {"DataAbertura", type datetime}, {"AnalistaID", type text}, {"CategoriaID", type text}, {"TempoAtendimento", Int64.Type}}),
+				    #"Início da Hora Inserido" = Table.AddColumn(#"Tipo Alterado", "HoraAbertura", each Time.StartOfHour([DataAbertura]), type datetime),
+				    #"Horário Extraído" = Table.TransformColumns(#"Início da Hora Inserido",{{"HoraAbertura", DateTime.Time, type time}}),
+				    // Adicionando uma coluna Período abertuda chamado.
+				    PeriodoAbertura = Table.AddColumn(#"Horário Extraído", "PeriodoAbertura", each 
+				if Time.Hour([HoraAbertura]) >= 0 and Time.Hour([HoraAbertura]) < 6 then "Madrugada"//  (00:00-05:59)
+				else if Time.Hour([HoraAbertura]) >= 6 and Time.Hour([HoraAbertura]) < 12 then "Manhã" //  (06:00-11:59)
+				else if Time.Hour([HoraAbertura]) >= 12 and Time.Hour([HoraAbertura]) < 18 then "Tarde"  // (12:00-17:59)
+				else if Time.Hour([HoraAbertura]) >= 18 and Time.Hour([HoraAbertura]) <= 23 then "Noite" //  (18:00-23:59)
+				else "Indefinido",  type text)
+				in
+				    PeriodoAbertura
+				```
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

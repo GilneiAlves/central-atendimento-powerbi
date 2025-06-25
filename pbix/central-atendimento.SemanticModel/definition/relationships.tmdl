@@ -1,0 +1,21 @@
+relationship 778fd8ae-ca6c-421d-b3b8-e190d3c5f601
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fChamados.DataAbertura
+	toColumn: LocalDateTable_b11c666a-7c10-4139-8e02-b585309b88ae.Date
+
+relationship AutoDetected_16161b03-24b8-4476-8fb6-72c8fa461920
+	fromColumn: fAcoesChamado.AcaoID
+	toColumn: dAcoes.AcaoID
+
+relationship AutoDetected_a6837271-c8b2-4779-b979-ea6d193cc1f2
+	fromColumn: fChamados.AnalistaID
+	toColumn: dAnalistas.AnalistaID
+
+relationship AutoDetected_d9a98fab-21b5-41f5-a46e-b160f5185d1a
+	fromColumn: fChamados.CategoriaID
+	toColumn: dCategorias.CategoriaID
+
+relationship AutoDetected_a7f78c2f-ef9a-49c1-b05a-344a7ea24b13
+	fromColumn: fAcoesChamado.IDChamado
+	toColumn: fChamados.IDChamado
+

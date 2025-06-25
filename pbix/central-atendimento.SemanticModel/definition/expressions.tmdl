@@ -1,0 +1,9 @@
+/// Mude aqui o caminho dos arquivos.
+expression Caminho = "C:\GitHub\central-atendimento-powerbi\Arquivos\" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: ba8f6387-8d58-4c5d-bd4e-ea9cbd7e1671
+	queryGroup: Parâmentros
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Text
+

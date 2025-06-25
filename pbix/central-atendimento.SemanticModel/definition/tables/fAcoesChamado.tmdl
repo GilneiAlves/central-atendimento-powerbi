@@ -1,0 +1,54 @@
+table fAcoesChamado
+	lineageTag: 8a8bef14-59b7-4aa0-bcb1-77d4f5047816
+
+	column IDChamado
+		dataType: string
+		lineageTag: 99c5bdf9-00da-4f77-8533-022b00cc9afd
+		summarizeBy: none
+		sourceColumn: IDChamado
+
+		annotation SummarizationSetBy = Automatic
+
+	column AcaoID
+		dataType: string
+		lineageTag: d083dd76-78be-4dda-afc1-f49045941572
+		summarizeBy: none
+		sourceColumn: AcaoID
+
+		annotation SummarizationSetBy = Automatic
+
+	column AnalistaAcaoID
+		dataType: string
+		lineageTag: 3ccdcfcd-7019-4ebd-bcab-84cf12568a31
+		summarizeBy: none
+		sourceColumn: AnalistaAcaoID
+
+		annotation SummarizationSetBy = Automatic
+
+	column DuracaoMinutos
+		dataType: int64
+		formatString: 0
+		lineageTag: c9d96aaf-882c-4bfd-abde-8226bed8a1c2
+		summarizeBy: sum
+		sourceColumn: DuracaoMinutos
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fAcoesChamado = m
+		mode: import
+		queryGroup: 'Tabelas Fatos'
+		source =
+				let
+				    Fonte = Excel.Workbook(File.Contents(Caminho&"Detalhes_Chamados.xlsx"), null, true),
+				    Sheet1_Sheet = Fonte{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"IDChamado", type text}, {"CodAcao", type text}, {"TipoAcao", type text}, {"CodAnalista", type text}, {"Analista", type text}, {"DuracaoMinutos", Int64.Type}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"TipoAcao", "Analista"}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Colunas Removidas",{{"CodAcao", "AcaoID"}, {"CodAnalista", "AnalistaAcaoID"}})
+				in
+				    #"Colunas Renomeadas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
