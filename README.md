@@ -78,7 +78,7 @@ Com essas informações, foi desenvolvido um modelo de dados no Power BI com med
 
 
 <p align="center">
-  <img src="./screenshots/modelo_relacional_powerBi.png" alt="Modelo de dados relacional no Power BI" width="600"/>
+  <img src="./screenshots/modelo_relacional_powerbi.png" alt="Modelo de dados relacional no Power BI" width="600"/>
 </p>
 
 ---
