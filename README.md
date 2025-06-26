@@ -74,20 +74,28 @@ Com essas informações, foi desenvolvido um modelo de dados no Power BI com med
 
 <p align="center">
   <img src="./screenshots/overview.png" alt="Visão geral do dashboard" width="600"/>
+  <br/>
+  <em>Figura 1 – Visão geral do dashboard com KPIs principais e filtros interativos.</em>
 </p>
 
 <p align="center">
   <img src="./screenshots/top_analistas.png" alt="Ranking dos analistas" width="600"/>
+  <br/>
+  <em>Figura 2 – Ranking dos analistas com destaque visual para os três primeiros colocados.</em>
 </p>
 
 <p align="center">
-  <img src="./screenshots/analise_acoes_complexidade.png" alt="Analise de ações Complexas" width="600"/>
+  <img src="./screenshots/analise_acoes_complexidade.png" alt="Análise de ações complexas" width="600"/>
+  <br/>
+  <em>Figura 3 – Relação entre número de ações e tempo de atendimento dos chamados.</em>
 </p>
-
 
 <p align="center">
   <img src="./screenshots/modelo_relacional_powerbi.png" alt="Modelo de dados relacional no Power BI" width="600"/>
+  <br/>
+  <em>Figura 4 – Modelo relacional dos dados no Power BI utilizando esquema estrela.</em>
 </p>
+
 
 ---
 
@@ -125,7 +133,7 @@ Caso queira ver o mockup visual utilizado para inspiração do layout do dashboa
 
 **Gilnei Alves de Freitas**  
 Analista de Dados Sênior  
-[LinkedIn](https://www.linkedin.com/in/gilnei-alves/) | [Email](mailto:gilnei147@gmail.com)
+🔗[LinkedIn](https://www.linkedin.com/in/gilnei-alves/) | [Email](mailto:gilnei147@gmail.com)
 
 ---
 
