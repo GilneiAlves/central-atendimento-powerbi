@@ -1,0 +1,268 @@
+createOrReplace
+
+	table Medidas
+		lineageTag: d6902528-59cf-42a7-a0f9-1a54f2d17c03
+
+		/// Número total de Ações para cada chamado
+		measure 'Numero de Acoes' =
+				
+				CALCULATE(
+				    COUNTA(fAcoesChamado[AcaoID]), // Conta no número de ações por chamado
+				    TREATAS(
+				        VALUES(fChamados[IDChamado]), // Pega o IDChamado da linha atual em fChamados
+				        fAcoesChamado[IDChamado]      // Aplica esse ID como filtro em fAcoesChamado
+				    )
+				)+0
+			formatString: #,0
+			displayFolder: Gerais
+			lineageTag: 2086480b-2f17-42c4-8544-fc4a940f6197
+
+		/// Tempo médio de atendimento em minutos
+		measure 'Tempo Médio Atendimento' = ```
+				
+				AVERAGE(    // Tempo médio de atendimento em minutos
+				    fChamados[TempoAtendimento]
+				)+0 
+				```
+			formatString: #,0.00
+			displayFolder: Tempo Atendimento
+			lineageTag: 29e336f3-dac4-402c-b64e-a439cb00bdc3
+
+		/// Tempo médio de atendimento em minutos em finais de semana
+		measure 'Tempo Médio Atendimento (Dias Úteis)' =
+				
+				CALCULATE( // Calcula o tempo médio de atendimento
+				    [Tempo Médio Atendimento],
+				    FILTER(
+				        dCalendario,
+				        dCalendario[DiaUtil] = "Sim" // Considera apenas dias úteis (segunda a sexta).
+				    )
+				) + 0
+			formatString: 0.00
+			displayFolder: Tempo Atendimento
+			lineageTag: b979e8ee-adf4-41c8-8128-25645495dba4
+
+		/// Tempo médio de atendimento em minutos em dias uteis
+		measure 'Tempo Médio Atendimento (Dias Não Úteis)' = ```
+				
+				CALCULATE( // Calcula o tempo médio de atendimento
+				    [Tempo Médio Atendimento],
+				    FILTER(
+				        dCalendario,
+				        dCalendario[DiaUtil] = "Não" // Considera apenas dias não úteis (sábado e domingo). Feriados não estão incluídos como não úteis
+				    )
+				) + 0 
+				```
+			formatString: #,0.00
+			displayFolder: Tempo Atendimento
+			lineageTag: b71a9775-218a-470e-8582-a73664e0352d
+
+		/// Quantidade de chamados únicos abertos
+		measure 'Numero de Chamados' = ```
+				
+				DISTINCTCOUNT( // Quantidade de chamados únicos
+				    fChamados[IDChamado]
+				)+0 
+				```
+			formatString: #,0
+			displayFolder: Gerais
+			lineageTag: 92134cff-e0fb-4ab3-9003-145339522fd8
+
+		/// Calcula o ranking do analista com base no número de chamados
+		measure 'Rank Top 3 Analistas (Qtd e Tempo)' = ```
+				
+				/* 
+				Calcula o rank de um analista com base em um critério combinado
+				(mais chamados é melhor, menor tempo de atendimento é melhor para desempate)
+				e retorna o número do rank APENAS se o analista estiver no Top 3.
+				*/
+				VAR TopNAnalistas = 3
+				VAR RankDoAnalista =
+				    IF(
+				        HASONEVALUE(dAnalistas[NomeAnalista]), // Garante que só calcule o rank se houver exatamente 1 analista no contexto (evita ambiguidade)
+				        RANKX(
+				            ALLSELECTED(dAnalistas), // Considera todos os analistas visíveis no contexto de filtro atual
+				            CALCULATE( 
+				                [Numero de Chamados] + DIVIDE(1, 1 + [Tempo Médio Atendimento], 0) // prioriza mais chamados, desempata por menor tempo médio (menor tempo = maior fração)
+				            ),
+				            , 
+				            DESC, // Ordem decrescente: maior valor do critério = melhor rank
+				            DENSE  
+				        )
+				    )
+				// Retorna o rank calculado acima SOMENTE se ele for menor ou igual ao TopNAnalistas.
+				RETURN
+				    IF(
+				        RankDoAnalista <= TopNAnalistas,
+				        RankDoAnalista,
+				        BLANK()
+				    )
+				```
+			formatString: 0
+			displayFolder: Rank
+			lineageTag: e68de0ff-f93b-488b-8e6c-8afad4bd6499
+
+		/// Total em minutos para cada Execução
+		measure 'Total Minutos Execução Ações' = ```
+				
+				SUM(   // Total em minutos para cada Execucao
+				    fAcoesChamado[DuracaoMinutos]
+				) + 0 
+				```
+			formatString: #,0
+			displayFolder: Tempo Atendimento
+			lineageTag: 79c74591-37ae-4834-ad61-6484a6aaa3d0
+
+		measure 'Cor Destaque Menor Tempo Medio Analista' = ```
+				
+				VAR MinimoTempoMedioGeral = 
+				MINX(
+				    ALLSELECTED(dAnalistas), // Menor tempo médio entre os analistas visíveis no filtro
+				    [Tempo Médio Atendimento]
+				)
+				
+				VAR TempoMedioAtualDoAnalista = [Tempo Médio Atendimento]
+				VAR CorDeDestaque = "#2ECC71"  // Um tom de verde para o destaque
+				VAR CorPadrao = "#4A0756" // Roxo para os demais
+				
+				RETURN
+				// Aplica a cor de destaque ao analista com o menor tempo médio de atendimento, desde que tenha atendido pelo menos um chamado. Senão, usa a cor padrão.
+				    IF(
+				        TempoMedioAtualDoAnalista = MinimoTempoMedioGeral && [Numero de Chamados] >0,
+				        CorDeDestaque,
+				        CorPadrao
+				    )
+				```
+			displayFolder: Cor Destaque
+			lineageTag: 7ce14b1a-6600-4e4d-bcda-b4a8d257df22
+
+		/// Define a cor para para maior tempo por ação
+		measure 'Cor Destaque Maior Total Minutos Acao' = ```
+				
+				VAR TotalMinutosAcaoAtual = [Total Minutos Execução Ações] // Valor para o Tipo de Ação
+				
+				// Calcula o maior valor de TotalMinutosAcaoAtual entre todos os Tipos de Ação visíveis
+				VAR MaximoTotalMinutosGeral = 
+				    MAXX(
+				        ALLSELECTED(dAcoes[TipoAcao]), // Considera todos os Tipos de Ação visíveis/filtrados
+				        [Total Minutos Execução Ações]
+				    )
+				VAR CorDeDestaque = "#E74C3C"  // vermelho/laranja para o maior valor
+				VAR CorPadrao = "#4A0756"   // Roxo logo da empresa
+				
+				RETURN
+				// Aplica a cor de destaque se o total de minutos da ação atual for igual ao maior total geral. Caso contrário, usa a cor padrão.
+				    IF(
+				        NOT ISBLANK(TotalMinutosAcaoAtual) && TotalMinutosAcaoAtual = MaximoTotalMinutosGeral,
+				        CorDeDestaque,
+				        CorPadrao
+				    )
+				```
+			displayFolder: Cor Destaque
+			lineageTag: 1ca9a149-8f89-4b72-b554-95c624c463c1
+
+		/// Tempo total do atendimento
+		measure 'Tempo Total Atendimento' = ```
+				
+				SUM(   // Tempo total do atendimento
+				    fChamados[TempoAtendimento]
+				)+0 
+				```
+			formatString: 0
+			displayFolder: Tempo Atendimento
+			lineageTag: 072a059a-d990-4e19-bff4-39ca4511f8a6
+
+		/// Quantidade de Analistas por Chamado
+		measure 'Qtd Analistas Distintos por Chamado' =
+				
+				CALCULATE(
+				    DISTINCTCOUNT(fAcoesChamado[AnalistaID]), // Conta os AnalistaAcaoID distintos na fAcoesChamado
+				    TREATAS( // Aplicar um filtro virtual baseado no IDChamado
+				        VALUES(fChamados[IDChamado]),         // Pega os IDChamados do contexto de filtro atual da fChamados
+				        fAcoesChamado[IDChamado]              // Usa para filtrar a coluna IDChamado na fAcoesChamado
+				    )
+				)+0
+			formatString: #,0
+			displayFolder: Gerais
+			lineageTag: 0e0ef072-4bd8-4912-b759-32aa71065436
+
+		measure 'Cor Destaque Chamados' = ```
+				
+				VAR TotalChamadosAtual = [Numero de Chamados] // Valor para o Número de Chamdos
+				
+				// Calcula o maior valor de TotalChamadosAtual entre todos os Tipos de Ação visíveis
+				VAR MaximoTotalChamdosGeral = 
+				    MAXX(
+				        ALLSELECTED(dAnalistas), // Considera todos os Analistas visíveis/filtrados
+				        [Numero de Chamados]
+				    )
+				VAR CorDeDestaque = "#2ECC71"  // verde para o maior valor
+				VAR CorPadrao = "#4A0756"   // Um Roxo da logo marca da empresa
+				
+				RETURN
+				// Aplica a cor de destaque apenas se o total de chamados do analista atual for igual ao maior valor geral. Caso contrário, usa a cor padrão.
+				    IF(
+				        NOT ISBLANK(TotalChamadosAtual) && TotalChamadosAtual = MaximoTotalChamdosGeral, 
+				        CorDeDestaque,
+				        CorPadrao
+				    )
+				```
+			displayFolder: Cor Destaque
+			lineageTag: 08180a48-bcdb-45fb-83ee-22d8bbc47f84
+
+		measure 'Limite Eixo X Dispersao' = ```
+				
+				VAR TabelaTotal = // Cria uma tabela "virtual" com o total de ações por chamado
+				    SUMMARIZE(
+				        ALLSELECTED(fChamados[IDChamado]), // Remove o contexto atual de IDChamado, mas respeita filtros externos aplicados
+				        fChamados[IDChamado],              // Agrupa por chamado
+				        "Qtd", [Numero de Acoes]           // Cria uma coluna chamada "Qtd" com o número de ações por chamado
+				    )
+				RETURN
+				    MAXX(TabelaTotal, [Qtd]) // Retorna o maior número de ações registradas em um único chamado
+				    + 2  // Adiciona um "respiro" no limite (espaço extra no eixo X do gráfico de dispersão)
+				
+				```
+			formatString: 0
+			displayFolder: Gerais
+			lineageTag: d04fd980-0ebb-4d73-9734-0fa7e9a90866
+
+		measure 'Cor Destaque Menor Tempo Médio Categoria' = ```
+				
+				VAR MinimoTempoMedioGeral = 
+				MAXX(
+				    ALLSELECTED(dCategorias), // Menor tempo médio entre os categoria visíveis no filtro
+				    [Tempo Médio Atendimento]
+				)
+				
+				VAR TempoMedioAtualDoAnalista = [Tempo Médio Atendimento]
+				VAR CorDeDestaque = "#E74C3C"  // Um tom de vermelho/laranjado para o destaque
+				VAR CorPadrao = "#4A0756" // Roxo para os demais
+				
+				RETURN
+				// Aplica a cor de destaque ao analista com o menor tempo médio de atendimento, desde que tenha atendido pelo menos um chamado. Senão, usa a cor padrão.
+				    IF(
+				        TempoMedioAtualDoAnalista = MinimoTempoMedioGeral && [Numero de Chamados] >0,
+				        CorDeDestaque,
+				        CorPadrao
+				    )
+				```
+			displayFolder: Cor Destaque
+			lineageTag: 22c457f5-1254-41af-9466-615d71e3bb35
+
+		column Medidas
+			isHidden
+			formatString: 0
+			lineageTag: 4ffa8fbc-fa3d-4e32-8bf0-c39af3031b95
+			summarizeBy: sum
+			isNameInferred
+			sourceColumn: [Medidas]
+
+			annotation SummarizationSetBy = Automatic
+
+		partition Medidas = calculated
+			mode: import
+			source = Row("Medidas", BLANK())
+
+			annotation PBI_Id = 54809a40f9f04032a22653b41ac01455
+
