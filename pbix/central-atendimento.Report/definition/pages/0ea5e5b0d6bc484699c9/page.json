@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.4.0/schema.json",
-  "name": "46951e85b0022c05340c",
-  "displayName": "Visão Geral e Categorias",
+  "name": "0ea5e5b0d6bc484699c9",
+  "displayName": "Desempenho dos Analistas",
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1280,
@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'background_Visão_Geral_Categorias.png'"
+                    "Value": "'background_Analista_performance.png'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "background_Vis_o_Geral_Categor82587623601237.png"
+                    "ItemName": "background_Analista_performanc3463486723511353.png"
                   }
                 }
               },

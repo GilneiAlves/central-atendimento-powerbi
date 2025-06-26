@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.4.0/schema.json",
-  "name": "46951e85b0022c05340c",
-  "displayName": "Visão Geral e Categorias",
+  "name": "e574f613d827e87db208",
+  "displayName": "Análise de Ações e Variações",
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1280,
@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'background_Visão_Geral_Categorias.png'"
+                    "Value": "'background_Ações_Variações.png'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "background_Vis_o_Geral_Categor82587623601237.png"
+                    "ItemName": "background_A__es_Varia__es6028885282039383.png"
                   }
                 }
               },

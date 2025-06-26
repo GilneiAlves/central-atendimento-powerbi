@@ -34,6 +34,27 @@
           "type": "BaseTheme"
         }
       ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "background_Vis_o_Geral_Categor82587623601237.png",
+          "path": "background_Vis_o_Geral_Categor82587623601237.png",
+          "type": "Image"
+        },
+        {
+          "name": "background_Analista_performanc3463486723511353.png",
+          "path": "background_Analista_performanc3463486723511353.png",
+          "type": "Image"
+        },
+        {
+          "name": "background_A__es_Varia__es6028885282039383.png",
+          "path": "background_A__es_Varia__es6028885282039383.png",
+          "type": "Image"
+        }
+      ]
     }
   ],
   "settings": {
