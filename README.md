@@ -1,6 +1,9 @@
 
 # Dashboard de Desempenho - Central de Atendimento
 
+🔗 **Acesse o dashboard interativo publicado no Power BI aqui:**  
+👉 [Dashboard de Desempenho - Central de Atendimento](https://app.powerbi.com/view?r=eyJrIjoiODNhMmQ2YWUtY2ZhOS00YjA3LWI4MTQtMjdkMTAxZTc3NDQ2IiwidCI6IjE0NTkzZjgwLTI2NDEtNDQzYy1hOTAzLWQzNGMyNzE1NDdjYSJ9)
+
 Este projeto simula uma análise realista de uma central de atendimento, utilizando dados operacionais de chamados e ações realizadas por analistas. O objetivo é identificar gargalos, avaliar a performance da equipe e gerar insights visuais por meio de um dashboard interativo no **Power BI**.
 
 ---
