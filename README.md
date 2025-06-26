@@ -59,7 +59,7 @@ Com essas informações, foi desenvolvido um modelo de dados no Power BI com med
 </p>
 
 <p align="center">
-  <img src="./screenshots/.png" alt="Ranking dos analistas" width="600"/>
+  <img src="./screenshots/top_analistas.png" alt="Ranking dos analistas" width="600"/>
 </p>
 
 ---
