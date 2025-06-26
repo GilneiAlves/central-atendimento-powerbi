@@ -32,12 +32,20 @@ Com essas informações, foi desenvolvido um modelo de dados no Power BI com med
 
 - **Power BI Desktop**  
 - **Power Query** para tratamento de dados e criação de colunas derivadas.
-- **Modelagem Relacional**
-  - ``
-  - ``
-  - ``
-  - ``
-  - ``
+- **Modelagem de Dados no Power BI**
+  - Os dados foram estruturados a partir de dois arquivos `.xlsx` (Chamados e Detalhes_Chamados) e modelados no Power BI com foco em desempenho e clareza analítica.
+  - Adotado o **esquema estrela**, com separação clara entre fatos e dimensões, visando melhor desempenho e facilidade na criação de medidas DAX.
+  - **Tabelas fato**:
+    - `fChamados`: um registro por chamado, contendo métricas como tempo total de atendimento.
+    - `fAcoesChamado`: um registro por ação dentro do chamado, com duração em minutos e referências a dimensões.
+  - **Tabelas dimensão**:
+    - `dCalendario`: criada com `CALENDAR`, cobrindo o período total dos dados e incluindo indicadores como dias úteis/finais de semana.
+    - `dAnalistas`: dados dos analistas responsáveis pelos atendimentos.
+    - `dCategorias`: categorias dos chamados, com estrutura hierárquica (CategoriaPai).
+    - `dAcoes`: tipos de ações executadas nos chamados.
+    - `dChamados`: dimensão auxiliar para ligação entre fatos, se necessário.
+  - **Relacionamentos definidos** com base nas chaves: `AnalistaID`, `CategoriaID`, `Data`, `AcaoID` e `ChamadoID`, garantindo consistência na navegação e nos filtros cruzados entre visuais.
+"""
 - **Medidas DAX** como:
   - `CALCULATE`
   - `AVERAGEX`
@@ -77,7 +85,9 @@ central-atendimento-powerbi/
 │       └── central-atendimento.Report
 │       └── central-atendimento.SemanticModel
 ├── screenshots/
-│   └── ...
+│   └── analise_acoes_complexidade.png
+│   └── overview.png
+│   └── top_analistas.png
 ├── Arquivos/
 │   └── Chamados.xlsx
 │   └── Detalhes_Chamados.xlsx
