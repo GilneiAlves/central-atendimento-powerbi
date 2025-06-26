@@ -764,6 +764,16 @@ cultureInfo pt-BR
 			            },
 			            "Weight": 0.582
 			          }
+			        },
+			        {
+			          "Chamado ID": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1388,6 +1398,16 @@ cultureInfo pt-BR
 			          "numero de acoes": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "Número de Ações": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1562,6 +1582,16 @@ cultureInfo pt-BR
 			            },
 			            "Weight": 0.599
 			          }
+			        },
+			        {
+			          "Total Minutos Execucao Ações": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1645,6 +1675,16 @@ cultureInfo pt-BR
 			        {
 			          "qtd analistas distintos por chamado": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Qtd. Analistas Distintos por Chamado": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
