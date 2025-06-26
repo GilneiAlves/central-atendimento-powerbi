@@ -50,14 +50,12 @@ Com essas informações, foi desenvolvido um modelo de dados no Power BI com med
 
 ## Insights Relevantes
 
-
-
 ---
 
 ## Capturas de Tela
 
 <p align="center">
-  <img src="./screenshots/.png" alt="Visão geral do dashboard" width="600"/>
+  <img src="./screenshots/overview.png" alt="Visão geral do dashboard" width="600"/>
 </p>
 
 <p align="center">
