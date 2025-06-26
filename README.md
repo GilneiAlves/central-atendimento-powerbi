@@ -17,14 +17,19 @@ Com essas informações, foi desenvolvido um modelo de dados no Power BI com med
 ### Perguntas a serem Respondidas pelo Dashboard
 
 1. **Qual categoria apresenta o maior tempo médio de atendimento?**  
+   - Análise segmentada por dias úteis e não úteis.
 
 2. **Qual analista atendeu ao maior número de chamados?**  
+   - Visual do tipo *ranking* com destaque para o top 3.
 
 3. **Qual analista possui o menor tempo médio de atendimento?**  
+   - Destaque visual no gráfico de barras e filtro por período.
 
 4. **Qual tipo de ação acumulou o maior total de minutos de execução?**  
+   - Gráfico de barras com destaque visual no gráfico.
 
 5. **Como varia o tempo total de atendimento de um chamado conforme o número de ações registradas?**  
+   - Gráfico de dispersão evidenciando correlação.
 
 ---
 
