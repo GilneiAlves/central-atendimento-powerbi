@@ -146,7 +146,7 @@ Caso queira ver o mockup visual utilizado para inspiração do layout do dashboa
 
 **Gilnei Alves de Freitas**  
 Analista de Dados Sênior  
-🔗[LinkedIn](https://www.linkedin.com/in/gilnei-alves/) | [Email](mailto:gilnei147@gmail.com)
+🔗[LinkedIn](https://www.linkedin.com/in/gilnei-freitas/) | [Email](mailto:gilnei147@gmail.com)
 
 ---
 
