@@ -90,3 +90,48 @@ A segunda seção organiza os principais **insights e respostas** às perguntas 
 
 ---
 
+### Página 3: Ações e Complexidade
+
+#### Pergunta 4:
+**Qual tipo de ação acumulou o maior total de minutos de execução?**
+
+- **Resposta**: **Intervenção técnica**, com 1.215 minutos
+
+**Insights**:
+- Foco de melhorias deve estar nessa ação
+- Sugere revisão de processos e automações
+
+#### Pergunta 5:
+**Como varia o tempo total de atendimento conforme o número de ações registradas?**
+
+- **Resposta**: Observa-se uma relação direta entre o número de ações registradas e o tempo total de atendimento de um chamado. Chamados com maior número de ações tendem, em média, a apresentar maior tempo total de atendimento.
+
+**Exemplos**:
+- 4 ações → Chamado ID 22 (302 min), ID 6 (237 min), Chamado ID 11 (233 minutos) ou Chamado ID 9 (215 minutos)
+- 2 ações → Chamado ID 13 (76 min), ID 4 (82 min) ou Chamado ID 17 (99 minutos)
+
+**Insights**:
+- Correlação visual mostra crescimento do tempo com mais ações
+- Identifica outliers (muitas ações com pouco tempo e vice-versa)
+- Suporte à revisão de processos com base na complexidade
+- Processos mais enxutos ou melhor integração entre analistas podem ajudar a reduzir o tempo médio de atendimento, mesmo em chamados mais complexos.
+
+---
+
+## Conclusão
+
+Este projeto demonstra como uma modelagem de dados bem estruturada, aliada ao uso eficaz do Power Query, DAX e boas práticas de visualização, pode transformar dados operacionais em insights acionáveis de alto valor para a tomada de decisão.
+
+Ao longo da análise, foi possível identificar gargalos operacionais, mapear padrões de desempenho entre analistas e entender como a complexidade das ações influencia diretamente o tempo de atendimento. Esses achados reforçam a importância de utilizar dados como base para decisões estratégicas, como a alocação de recursos, revisão de processos e melhoria contínua no atendimento.
+
+### Recomendações Gerais:
+
+- **Revisar a atuação em finais de semana** para categorias com maior tempo médio de atendimento.
+- **Monitorar ações com alta duração**, como "Intervenção técnica", buscando oportunidades de automação ou simplificação de processos.
+- **Valorizar e replicar boas práticas** de analistas com maior eficiência, como observado no desempenho de Tyrion.
+- **Investir na padronização dos dados na origem**, reduzindo o retrabalho durante o tratamento e enriquecimento.
+- **Expandir o uso de ferramentas de ETL/ELT** para escalabilidade futura, conforme o crescimento do volume ou da complexidade dos dados.
+
+Este case evidencia não apenas a importância de ferramentas como o Power BI, mas também o papel estratégico do analista de dados na construção de soluções que apoiam decisões orientadas por evidência.
+
+---
