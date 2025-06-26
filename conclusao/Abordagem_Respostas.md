@@ -67,3 +67,26 @@ A segunda seção organiza os principais **insights e respostas** às perguntas 
 - Auxilia no planejamento de capacidade da equipe
 
 ---
+
+### Página 2: Desempenho dos Analistas
+
+#### Pergunta 2:
+**Qual analista atendeu ao maior número de chamados?**
+
+- **Resposta**: 
+  - 1º Jon (16 chamados)
+  - 2º Tyrion (9)
+  - 3º Daenerys (5)
+
+#### Pergunta 3:
+**Qual analista possui o menor tempo médio de atendimento?**
+
+- **Resposta**: Tyrion, com média de **138 minutos**
+
+**Insights**:
+- Jon tem alto volume, Tyrion é o mais eficiente
+- Visualização com formatação condicional destaca o melhor desempenho
+- Ranking pode guiar redistribuição de carga e estratégias de capacitação
+
+---
+
