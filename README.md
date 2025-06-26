@@ -20,19 +20,20 @@ Com essas informações, foi desenvolvido um modelo de dados no Power BI com med
 ### Perguntas a serem Respondidas pelo Dashboard
 
 1. **Qual categoria apresenta o maior tempo médio de atendimento?**  
-   - Análise segmentada por dias úteis e não úteis.
+    - [Análise segmentada por dias úteis e não úteis.](./conclusao/Abordagem_Respostas.md#Respostas).
+
 
 2. **Qual analista atendeu ao maior número de chamados?**  
-   - Visual do tipo *ranking* com destaque para o top 3.
+   - [Visual do tipo *ranking* com destaque para o top 3.](./conclusao/Abordagem_Respostas.md#Respostas).
 
 3. **Qual analista possui o menor tempo médio de atendimento?**  
-   - Destaque visual no gráfico de barras e filtro por período.
+   - [Destaque visual no gráfico de barras e filtro por período.](./conclusao/Abordagem_Respostas.md#Respostas).
 
 4. **Qual tipo de ação acumulou o maior total de minutos de execução?**  
-   - Gráfico de barras com destaque visual no gráfico.
+   - [Gráfico de barras com destaque visual no gráfico.](./conclusao/Abordagem_Respostas.md#Respostas).
 
 5. **Como varia o tempo total de atendimento de um chamado conforme o número de ações registradas?**  
-   - Gráfico de dispersão evidenciando correlação.
+   - [Gráfico de dispersão evidenciando correlação.](./conclusao/Abordagem_Respostas.md#Respostas).
 
 ---
 
@@ -68,6 +69,21 @@ Com essas informações, foi desenvolvido um modelo de dados no Power BI com med
 
 ## Insights Relevantes
 
+- A categoria **Conectividade** apresentou o maior tempo médio de atendimento, especialmente em finais de semana — sugerindo a necessidade de reforço operacional ou revisão do SLA nesses períodos.
+
+- O analista **Tyrion** demonstrou o melhor desempenho em agilidade, com o menor tempo médio de atendimento. Pode servir como referência para replicação de boas práticas internas.
+
+- A ação **Intervenção técnica** foi responsável pela maior carga de tempo acumulado. Isso indica oportunidade de automação ou redesenho de processo para aumentar a eficiência.
+
+- Foi identificada uma **relação direta entre o número de ações e o tempo total de atendimento**. Chamados com 4 ações ou mais tendem a durar significativamente mais — o que reforça a necessidade de otimização dos fluxos.
+
+- A adoção do **esquema estrela** e uso de **Power Query (M)** proporcionaram um modelo limpo e performático, facilitando análises rápidas e segmentadas no Power BI.
+
+- A padronização dos dados durante o tratamento evitou distorções analíticas — evidenciando a importância da governança de dados na entrada.
+
+Para mais detalhes e recomendações analíticas, consulte o documento completo:  
+[Abordagem_Respostas.md](./conclusao/abordagem_Respostas.md)
+
 ---
 
 ## Capturas de Tela
@@ -101,24 +117,21 @@ Com essas informações, foi desenvolvido um modelo de dados no Power BI com med
 
 ## Estrutura do Projeto
 
-```
-central-atendimento-powerbi/
-├── pbix/
-│   └── dashboard-central-atendimento.pbip
-│       └── central-atendimento.Report
-│       └── central-atendimento.SemanticModel
-├── screenshots/
-│   └── analise_acoes_complexidade.png
-│   └── overview.png
-│   └── top_analistas.png
-│   └── modelo_relacional_powerbi.png
-├── Arquivos/
-│   └── Chamados.xlsx
-│   └── Detalhes_Chamados.xlsx
-├── Conclusão/
-│   └── Abordagem_Respostas.md
-├── README.md
-```
+-  `pbix/`
+    -  [dashboard-central-atendimento.pbip](./pbix/central-atendimento.pbip)
+-  `screenshots/`
+    -  [analise_acoes_complexidade.png](./screenshots/analise_acoes_complexidade.png)
+    -  [overview.png](./screenshots/overview.png)
+    -  [top_analistas.png](./screenshots/top_analistas.png)
+    -  [modelo_relacional_powerbi.png](./screenshots/modelo_relacional_powerbi.png)
+-  `Arquivos/`
+    - [Chamados.xlsx](./Arquivos/Chamados.xlsx)
+    - [Detalhes_Chamados.xlsx](./Arquivos/Detalhes_Chamados.xlsx)
+-  `Conclusão/`
+    - [Abordagem_Respostas.md](./Conclusao/Abordagem_Respostas.md)
+    - [Abordagem_Respostas.pdf](./Conclusao/Abordagem_Respostas.pdf)
+-  [README.md](./README.md)
+
 
 ---
 
