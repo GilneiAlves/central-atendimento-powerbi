@@ -50,3 +50,20 @@ A segunda seção organiza os principais **insights e respostas** às perguntas 
 ## Geração de Insights Analíticos
 
 ### Página 1: Visão Geral e Categorias
+
+#### Pergunta 1:
+**Qual categoria apresenta o maior tempo médio de atendimento (dias úteis vs não úteis)?**
+
+- **Resposta**: Categoria **Conectividade** com média de 180,44 minutos.
+  - Dias úteis: 179 min | Dias não úteis: 195 min
+- **Visuais**:
+  - Gráficos de barras (tempo médio por categoria)
+  - Gráfico de linhas (picos de abertura ao longo do dia)
+  - Barras com número de chamados por categoria pai
+
+**Insights**:
+- Conectividade tem gargalos mesmo com menor volume em finais de semana
+- Indica necessidade de reforço ou reestruturação de processos
+- Auxilia no planejamento de capacidade da equipe
+
+---
