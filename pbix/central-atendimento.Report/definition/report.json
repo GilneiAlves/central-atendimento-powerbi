@@ -36,6 +36,10 @@
       }
     ]
   },
+  "publicCustomVisuals": [
+    "simpleImageEBC4593F96F1425FB3D84C5BF02B5075",
+    "TextEnhancerByMAQ46ASG0293G65JY43S89DKJ9"
+  ],
   "resourcePackages": [
     {
       "name": "SharedResources",
@@ -90,6 +94,21 @@
         {
           "name": "tl_19176161132387447.png",
           "path": "tl_19176161132387447.png",
+          "type": "Image"
+        },
+        {
+          "name": "21778330519919531.png",
+          "path": "21778330519919531.png",
+          "type": "Image"
+        },
+        {
+          "name": "15284594580043518.png",
+          "path": "15284594580043518.png",
+          "type": "Image"
+        },
+        {
+          "name": "319054846220288146.png",
+          "path": "319054846220288146.png",
           "type": "Image"
         }
       ]

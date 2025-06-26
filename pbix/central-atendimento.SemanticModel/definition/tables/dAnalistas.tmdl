@@ -38,7 +38,7 @@ table dAnalistas
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Duplicatas Removidas",{{"Analista", type text}, {"NomeAnalista", type text}}),
 				    #"Colunas Renomeadas" = Table.RenameColumns(#"Tipo Alterado",{{"Analista", "AnalistaID"}}),
 				    // Adicionando url das Imagens para cada analista.
-				    Adicionando_Imagens = Table.AddColumn(#"Colunas Renomeadas", "FotoURL", each if [NomeAnalista] = "Daenerys" then "https://encurtador.com.br/juUnV" else if [NomeAnalista] = "Tyrion" then "https://encurtador.com.br/ko8Ka" else if [NomeAnalista] = "Jon" then "https://encurtador.com.br/DchXs" else null, type text)
+				    Adicionando_Imagens = Table.AddColumn(#"Colunas Renomeadas", "FotoURL", each if [NomeAnalista] = "Daenerys" then "https://encurtador.com.br/juUnV" else if [NomeAnalista] = "Jon" then "https://encurtador.com.br/ko8Ka" else if [NomeAnalista] = "Tyrion" then "https://encurtador.com.br/DchXs" else null, type text)
 				in
 				    Adicionando_Imagens
 

@@ -7,7 +7,7 @@
     "z": 5000,
     "height": 150.73891625615764,
     "width": 125.91133004926108,
-    "tabOrder": 23
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "slicer",
@@ -256,20 +256,6 @@
         },
         "type": "Advanced",
         "howCreated": "User"
-      },
-      {
-        "name": "faac150974d3e18c4a42",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dCalendario"
-              }
-            },
-            "Property": "Date"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

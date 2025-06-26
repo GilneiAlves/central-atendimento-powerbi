@@ -7,7 +7,7 @@
     "z": 3000,
     "height": 63,
     "width": 174,
-    "tabOrder": 21
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "slicer",
@@ -251,37 +251,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "87a93722a3cad371a043",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "cd8ec364b53d7366e52d",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dCategorias"
-              }
-            },
-            "Property": "CategoriaPai"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "139696b9049c808c5359",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dCategorias"
-              }
-            },
-            "Property": "NomeCategoria"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
-  }
+  "parentGroupName": "87a93722a3cad371a043"
 }

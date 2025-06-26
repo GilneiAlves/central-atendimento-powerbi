@@ -7,7 +7,7 @@
     "z": 0,
     "height": 62.955665024630541,
     "width": 173.79310344827587,
-    "tabOrder": 18
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "slicer",
@@ -177,23 +177,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "87a93722a3cad371a043",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "46a837f3cd7423e5ac46",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dAcoes"
-              }
-            },
-            "Property": "TipoAcao"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
-  }
+  "parentGroupName": "87a93722a3cad371a043"
 }

@@ -4,9 +4,10 @@
   "position": {
     "x": 2.0406417986792547,
     "y": 154.28571428571428,
-    "z": 8,
+    "z": 7000,
     "height": 496.2983814215342,
-    "width": 174
+    "width": 174,
+    "tabOrder": 6000
   },
   "visualGroup": {
     "displayName": "Filtros",

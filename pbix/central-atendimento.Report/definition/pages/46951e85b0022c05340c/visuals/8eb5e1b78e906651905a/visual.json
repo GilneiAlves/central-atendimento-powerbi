@@ -7,7 +7,7 @@
     "z": 4000,
     "height": 62.955665024630541,
     "width": 173.79310344827587,
-    "tabOrder": 22
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "slicer",
@@ -176,23 +176,5 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "87a93722a3cad371a043",
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f453e7e5292c5283820e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dAnalistas"
-              }
-            },
-            "Property": "NomeAnalista"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
-  }
+  "parentGroupName": "87a93722a3cad371a043"
 }
