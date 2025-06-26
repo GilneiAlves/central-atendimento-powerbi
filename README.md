@@ -62,6 +62,10 @@ Com essas informações, foi desenvolvido um modelo de dados no Power BI com med
   <img src="./screenshots/top_analistas.png" alt="Ranking dos analistas" width="600"/>
 </p>
 
+<p align="center">
+  <img src="./screenshots/analise_acoes_complexidade.png" alt="Ranking dos analistas" width="600"/>
+</p>
+
 ---
 
 ## Estrutura do Projeto
