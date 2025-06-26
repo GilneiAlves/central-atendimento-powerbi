@@ -4,8 +4,8 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 125.11682383512698,
-        "y": 0
+        "x": 0,
+        "y": 5.4545454545454541
       },
       "nodes": [
         {
@@ -24,8 +24,8 @@
         },
         {
           "location": {
-            "x": 304.50993152949934,
-            "y": 538
+            "x": 270.87356789313577,
+            "y": 538.90909090909088
           },
           "nodeIndex": "dAnalistas",
           "nodeLineageTag": "7f82f4fe-ae4f-4cd3-8cfc-e9f42272a90d",
@@ -65,8 +65,8 @@
         },
         {
           "location": {
-            "x": 668.44942454215982,
-            "y": 334.45961202102217
+            "x": 469.35851545125081,
+            "y": 261.73233929374942
           },
           "nodeIndex": "fChamados",
           "nodeLineageTag": "f600a829-d358-42e0-a684-f15dd3e7e0f9",
@@ -93,19 +93,21 @@
         },
         {
           "location": {
-            "x": 1208.116823835127,
-            "y": 221
+            "x": 0,
+            "y": 742.63636363636363
           },
           "nodeIndex": "Medidas",
+          "nodeLineageTag": "d6902528-59cf-42a7-a0f9-1a54f2d17c03",
           "size": {
-            "height": 200,
+            "height": 72,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 0,
+          "expandedHeight": 200
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 100,
+      "zoomValue": 110.00000000000001,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

@@ -1,26 +1,40 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
-  "name": "3d80ef53cad0795c6c77",
+  "name": "3c6d3d1778ea2337e0d1",
   "position": {
-    "x": 1199.2052980132451,
-    "y": 20.264900662251655,
-    "z": 4000,
-    "height": 35.76158940397351,
-    "width": 52.450331125827816,
-    "tabOrder": 7000
+    "x": 0,
+    "y": 665.02463054187194,
+    "z": 7002,
+    "height": 54.975369458128078,
+    "width": 182.66009852216749,
+    "tabOrder": 0
   },
   "visual": {
-    "visualType": "image",
+    "visualType": "actionButton",
     "objects": {
-      "general": [
+      "icon": [
         {
           "properties": {
-            "imageUrl": {
+            "shapeType": {
               "expr": {
-                "ResourcePackageItem": {
-                  "PackageName": "RegisteredResources",
-                  "PackageType": 1,
-                  "ItemName": "LogoMakr_1cIxvZ23720699443943816.png"
+                "Literal": {
+                  "Value": "'blank'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -42,21 +56,21 @@
             "type": {
               "expr": {
                 "Literal": {
-                  "Value": "'PageNavigation'"
+                  "Value": "'WebUrl'"
                 }
               }
             },
-            "bookmark": {
+            "webUrl": {
               "expr": {
                 "Literal": {
-                  "Value": "'Bookmark4c4b482bfcf1ef72268b'"
+                  "Value": "'https://www.linkedin.com/in/gilnei-alves/'"
                 }
               }
             },
-            "navigationSection": {
+            "tooltip": {
               "expr": {
                 "Literal": {
-                  "Value": "'c97fdbd77e52460253bd'"
+                  "Value": "'https://www.linkedin.com/in/gilnei-alves/'"
                 }
               }
             }
@@ -69,7 +83,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Retornar para página inicial.'"
+                  "Value": "'https://www.linkedin.com/in/gilnei-alves/'"
                 }
               }
             }
@@ -78,5 +92,6 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "howCreated": "InsertVisualButton"
 }
