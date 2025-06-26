@@ -1,24 +1,23 @@
 table dCalendario
 	lineageTag: 2398905b-32bc-40d9-b1b4-f53a85e4b0cb
+	dataCategory: Time
 
 	column Date
-		formatString: General Date
+		isKey
+		formatString: Short Date
 		lineageTag: 9117fa74-3d30-4121-9ef0-cdf656ef30d9
 		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Date]
 
-		variation Variation
-			isDefault
-			relationship: 525ece40-1377-4d80-ab77-f5f74b2f33c2
-			defaultHierarchy: LocalDateTable_0d711d4a-95d2-4078-9d5c-c20d4fa25a66.'Hierarquia de datas'
-
 		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	column Ano
 		formatString: 0
 		lineageTag: 75eb314b-1dee-428c-9bd8-be4ee5971169
-		summarizeBy: sum
+		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Ano]
 
@@ -27,7 +26,7 @@ table dCalendario
 	column MesNumero
 		formatString: 0
 		lineageTag: fc234c7c-69dd-4251-a585-ffcce158d1c7
-		summarizeBy: sum
+		summarizeBy: none
 		isNameInferred
 		sourceColumn: [MesNumero]
 
@@ -52,7 +51,7 @@ table dCalendario
 	column Dia
 		formatString: 0
 		lineageTag: cad78a15-f954-4032-a2e8-32c70f73c10f
-		summarizeBy: sum
+		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Dia]
 
@@ -61,7 +60,7 @@ table dCalendario
 	column DiaDaSemana
 		formatString: 0
 		lineageTag: dea2ed9d-09c0-4dc5-b360-032f6e2b48be
-		summarizeBy: sum
+		summarizeBy: none
 		isNameInferred
 		sourceColumn: [DiaDaSemana]
 

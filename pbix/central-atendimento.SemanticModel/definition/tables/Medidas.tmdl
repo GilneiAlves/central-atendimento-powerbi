@@ -47,8 +47,9 @@ table Medidas
 			    [Tempo Médio Atendimento],
 			    FILTER(
 			        dCalendario,
-			        dCalendario[DiaUtil] = "Não" // Considera apenas dias não úteis (sábado e domingo). Feriados não estão incluídos como não úteis
+			        dCalendario[DiaUtil] = "Não"
 			    )
+			
 			) + 0 
 			```
 		formatString: #,0.00

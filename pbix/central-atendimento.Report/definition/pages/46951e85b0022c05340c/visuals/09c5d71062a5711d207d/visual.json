@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "09c5d71062a5711d207d",
+  "position": {
+    "x": 202.22222222222223,
+    "y": 116.48261758691207,
+    "z": 4,
+    "height": 69.366053169734172,
+    "width": 787.225630538514,
+    "tabOrder": 5000
+  },
+  "visualGroup": {
+    "displayName": "KPI",
+    "groupMode": "ScaleMode",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'KPIS: Principais indicadores. Números de chamados, tempo médio de atendimento. Número de ações.'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

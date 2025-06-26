@@ -2,8 +2,3206 @@ cultureInfo pt-BR
 
 	linguisticMetadata =
 			{
-			  "Version": "1.0.0",
-			  "Language": "en-US"
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "d_acoe": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dAcoes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "d acoe": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dAcoes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_acoe.acao_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dAcoes",
+			          "ConceptualProperty": "AcaoID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "acao ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AcaoID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "acao identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "acao identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "acao identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "acao credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "d_acoe.tipo_acao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dAcoes",
+			          "ConceptualProperty": "TipoAcao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo acao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TipoAcao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Tipo Ação": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "d_analista": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dAnalistas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "d analista": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dAnalistas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_analista.analista_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dAnalistas",
+			          "ConceptualProperty": "AnalistaID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "analista ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AnalistaID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "analista identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "analista identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "analista identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "analista credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "d_analista.nome_analista": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dAnalistas",
+			          "ConceptualProperty": "NomeAnalista"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome analista": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NomeAnalista": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_analista.foto_URL": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dAnalistas",
+			          "ConceptualProperty": "FotoURL"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "foto URL": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "FotoURL": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "foto website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "foto site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "foto web address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.589
+			          }
+			        }
+			      ]
+			    },
+			    "d_categoria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCategorias"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "d categoria": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dCategorias": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_categoria.categoria_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCategorias",
+			          "ConceptualProperty": "CategoriaID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "categoria ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CategoriaID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "categoria identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "categoria identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "categoria identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "categoria credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "d_categoria.nome_categoria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCategorias",
+			          "ConceptualProperty": "NomeCategoria"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome categoria": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NomeCategoria": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Categoria": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "d_categoria.categoria_pai": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCategorias",
+			          "ConceptualProperty": "CategoriaPai"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "categoria pai": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CategoriaPai": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "f_acoes_chamado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fAcoesChamado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "f acoes chamado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "f acoe chamado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "fAcoesChamado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "f_acoes_chamado.ID_chamado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fAcoesChamado",
+			          "ConceptualProperty": "IDChamado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ID chamado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "IDChamado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification chamado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity chamado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier chamado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential chamado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "f_acoes_chamado.acao_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fAcoesChamado",
+			          "ConceptualProperty": "AcaoID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "acao ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AcaoID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "acao identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "acao identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "acao identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "acao credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "f_acoes_chamado.analista_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fAcoesChamado",
+			          "ConceptualProperty": "AnalistaID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "analista ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AnalistaID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "analista identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "analista identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "analista identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "analista credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "f_acoes_chamado.duracao_minuto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fAcoesChamado",
+			          "ConceptualProperty": "DuracaoMinutos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "duracao minuto": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DuracaoMinutos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "f_chamado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fChamados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "f chamado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fChamados": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "f_chamado.ID_chamado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fChamados",
+			          "ConceptualProperty": "IDChamado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ID chamado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "IDChamado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification chamado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity chamado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier chamado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential chamado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "f_chamado.data_abertura": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fChamados",
+			          "ConceptualProperty": "DataAbertura"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data abertura": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DataAbertura": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information abertura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact abertura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info abertura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic abertura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document abertura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure abertura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record abertura": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "f_chamado.analista_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fChamados",
+			          "ConceptualProperty": "AnalistaID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "analista ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AnalistaID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "analista identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "analista identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "analista identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "analista credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "f_chamado.categoria_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fChamados",
+			          "ConceptualProperty": "CategoriaID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "categoria ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CategoriaID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "categoria identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "categoria identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "categoria identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "categoria credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "f_chamado.tempo_atendimento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fChamados",
+			          "ConceptualProperty": "TempoAtendimento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tempo atendimento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TempoAtendimento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "f_chamado.hora_abertura": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fChamados",
+			          "ConceptualProperty": "HoraAbertura"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hora abertura": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "HoraAbertura": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "time": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "f_chamado.periodo_abertura": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fChamados",
+			          "ConceptualProperty": "PeriodoAbertura"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "periodo abertura": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PeriodoAbertura": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "d calendario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dCalendario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "d_calendario.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.mes_numero": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "MesNumero"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mes numero": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "me numero": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "MesNumero": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.nome_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "NomeMes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NomeMes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.nome_mes_abrev": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "NomeMesAbrev"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome mes abrev": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nome me abrev": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "NomeMesAbrev": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.dia_da_semana": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "DiaDaSemana"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia da semana": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DiaDaSemana": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.nome_dia_da_semana": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "NomeDiaDaSemana"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome dia da semana": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NomeDiaDaSemana": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.nome_dia_da_semana_abrev": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "NomeDiaDaSemanaAbrev"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome dia da semana abrev": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NomeDiaDaSemanaAbrev": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.dia_util": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dCalendario",
+			          "ConceptualProperty": "DiaUtil"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia util": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DiaUtil": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.numero_de_acoes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Numero de Acoes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "numero de acoes": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.tempo_médio_atendimento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Tempo Médio Atendimento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tempo médio atendimento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Tempo Médio de Atendimento": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.tempo_médio_atendimento_dias_úteis": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Tempo Médio Atendimento (Dias Úteis)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tempo médio atendimento (dias úteis)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tempo médio atendimento": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "Atendimento (Dias Úteis)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.tempo_médio_atendimento_dias_não_úteis": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Tempo Médio Atendimento (Dias Não Úteis)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tempo médio atendimento (dias não úteis)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tempo médio atendimento": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "Atendimento (Dias Não Úteis)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.numero_de_chamados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Numero de Chamados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "numero de chamados": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.rank_top_3_analistas_qtd_e_tempo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Rank Top 3 Analistas (Qtd e Tempo)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rank top 3 analistas (qtd e tempo)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rank top 3 analistas": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_minutos_execução_ações": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total Minutos Execução Ações"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total minutos execução ações": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate minuto execução açõe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall minuto execução açõe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "medida.cor_destaque_menor_tempo_medio_analista": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Cor Destaque Menor Tempo Medio Analista"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cor destaque menor tempo medio analista": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.cor_destaque_maior_total_minutos_acao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Cor Destaque Maior Total Minutos Acao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cor destaque maior total minutos acao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.tempo_total_atendimento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Tempo Total Atendimento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tempo total atendimento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tempo aggregate atendimento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "tempo overall atendimento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "medida.qtd_analistas_distintos_por_chamado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Qtd Analistas Distintos por Chamado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd analistas distintos por chamado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.cor_destaque_chamados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Cor Destaque Chamados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cor destaque chamados": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.limite_eixo_x_dispersao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Limite Eixo X Dispersao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "limite eixo x dispersao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.cor_destaque_menor_tempo_médio_categoria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Cor Destaque Menor Tempo Médio Categoria"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cor destaque menor tempo médio categoria": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "f_chamado_has_d_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "fChamados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_chamado": {
+			          "Target": {
+			            "Entity": "f_chamado"
+			          }
+			        },
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_chamado"
+			            },
+			            "Object": {
+			              "Role": "d_calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_chamados_have_d_calendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "f_chamado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_f_chamados"
+			        }
+			      ]
+			    },
+			    "f_chamado_has_d_categoria": {
+			      "Binding": {
+			        "ConceptualEntity": "fChamados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_chamado": {
+			          "Target": {
+			            "Entity": "f_chamado"
+			          }
+			        },
+			        "d_categoria": {
+			          "Target": {
+			            "Entity": "d_categoria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_chamado"
+			            },
+			            "Object": {
+			              "Role": "d_categoria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_chamados_have_d_categorias"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_categoria"
+			            },
+			            "Object": {
+			              "Role": "f_chamado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_categorias_have_f_chamados"
+			        }
+			      ]
+			    },
+			    "f_chamado_has_d_analista": {
+			      "Binding": {
+			        "ConceptualEntity": "fChamados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_chamado": {
+			          "Target": {
+			            "Entity": "f_chamado"
+			          }
+			        },
+			        "d_analista": {
+			          "Target": {
+			            "Entity": "d_analista"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_chamado"
+			            },
+			            "Object": {
+			              "Role": "d_analista"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_chamados_have_d_analistas"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_analista"
+			            },
+			            "Object": {
+			              "Role": "f_chamado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_analistas_have_f_chamados"
+			        }
+			      ]
+			    },
+			    "f_acoes_chamado_has_d_analista": {
+			      "Binding": {
+			        "ConceptualEntity": "fAcoesChamado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_acoes_chamado": {
+			          "Target": {
+			            "Entity": "f_acoes_chamado"
+			          }
+			        },
+			        "d_analista": {
+			          "Target": {
+			            "Entity": "d_analista"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_acoes_chamado"
+			            },
+			            "Object": {
+			              "Role": "d_analista"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_acoes_chamados_have_d_analistas"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_analista"
+			            },
+			            "Object": {
+			              "Role": "f_acoes_chamado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_analistas_have_f_acoes_chamados"
+			        }
+			      ]
+			    },
+			    "f_acoes_chamado_has_d_acoe": {
+			      "Binding": {
+			        "ConceptualEntity": "fAcoesChamado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_acoes_chamado": {
+			          "Target": {
+			            "Entity": "f_acoes_chamado"
+			          }
+			        },
+			        "d_acoe": {
+			          "Target": {
+			            "Entity": "d_acoe"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_acoes_chamado"
+			            },
+			            "Object": {
+			              "Role": "d_acoe"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_acoes_chamados_have_d_acoes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_acoe"
+			            },
+			            "Object": {
+			              "Role": "f_acoes_chamado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_acoes_have_f_acoes_chamados"
+			        }
+			      ]
+			    },
+			    "medida_has_cor_destaque_menor_tempo_médio_categoria": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.cor_destaque_menor_tempo_médio_categoria": {
+			          "Target": {
+			            "Entity": "medida.cor_destaque_menor_tempo_médio_categoria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.cor_destaque_menor_tempo_médio_categoria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_cor_destaque_menor_tempo_médio_categoria"
+			        }
+			      ]
+			    },
+			    "medida_has_limite_eixo_x_dispersao": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.limite_eixo_x_dispersao": {
+			          "Target": {
+			            "Entity": "medida.limite_eixo_x_dispersao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.limite_eixo_x_dispersao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_limite_eixo_x_dispersao"
+			        }
+			      ]
+			    },
+			    "medida_has_cor_destaque_chamados": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.cor_destaque_chamados": {
+			          "Target": {
+			            "Entity": "medida.cor_destaque_chamados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.cor_destaque_chamados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_cor_destaque_chamados"
+			        }
+			      ]
+			    },
+			    "f_acoes_chamado_has_medida_qtd_analistas_distintos_por_chamado": {
+			      "Binding": {
+			        "ConceptualEntity": "fAcoesChamado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_acoes_chamado": {
+			          "Target": {
+			            "Entity": "f_acoes_chamado"
+			          }
+			        },
+			        "medida.qtd_analistas_distintos_por_chamado": {
+			          "Target": {
+			            "Entity": "medida.qtd_analistas_distintos_por_chamado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_acoes_chamado"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_analistas_distintos_por_chamado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_acoes_chamados_have_qtd_analistas_distintos_por_chamado"
+			        }
+			      ]
+			    },
+			    "f_chamado_has_medida_tempo_total_atendimento": {
+			      "Binding": {
+			        "ConceptualEntity": "fChamados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_chamado": {
+			          "Target": {
+			            "Entity": "f_chamado"
+			          }
+			        },
+			        "medida.tempo_total_atendimento": {
+			          "Target": {
+			            "Entity": "medida.tempo_total_atendimento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_chamado"
+			            },
+			            "Object": {
+			              "Role": "medida.tempo_total_atendimento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_chamados_have_tempo_total_atendimento"
+			        }
+			      ]
+			    },
+			    "medida_has_cor_destaque_maior_total_minutos_acao": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.cor_destaque_maior_total_minutos_acao": {
+			          "Target": {
+			            "Entity": "medida.cor_destaque_maior_total_minutos_acao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.cor_destaque_maior_total_minutos_acao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_cor_destaque_maior_total_minutos_acao"
+			        }
+			      ]
+			    },
+			    "medida_has_cor_destaque_menor_tempo_medio_analista": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.cor_destaque_menor_tempo_medio_analista": {
+			          "Target": {
+			            "Entity": "medida.cor_destaque_menor_tempo_medio_analista"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.cor_destaque_menor_tempo_medio_analista"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_cor_destaque_menor_tempo_medio_analista"
+			        }
+			      ]
+			    },
+			    "f_acoes_chamado_has_medida_total_minutos_execução_ações": {
+			      "Binding": {
+			        "ConceptualEntity": "fAcoesChamado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_acoes_chamado": {
+			          "Target": {
+			            "Entity": "f_acoes_chamado"
+			          }
+			        },
+			        "medida.total_minutos_execução_ações": {
+			          "Target": {
+			            "Entity": "medida.total_minutos_execução_ações"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_acoes_chamado"
+			            },
+			            "Object": {
+			              "Role": "medida.total_minutos_execução_ações"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_acoes_chamados_have_total_minutos_execução_ações"
+			        }
+			      ]
+			    },
+			    "medida_has_rank_top_3_analistas_qtd_e_tempo": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.rank_top_3_analistas_qtd_e_tempo": {
+			          "Target": {
+			            "Entity": "medida.rank_top_3_analistas_qtd_e_tempo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.rank_top_3_analistas_qtd_e_tempo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_rank_top_3_analistas_qtd_e_tempo"
+			        }
+			      ]
+			    },
+			    "f_chamado_has_medida_numero_de_chamados": {
+			      "Binding": {
+			        "ConceptualEntity": "fChamados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_chamado": {
+			          "Target": {
+			            "Entity": "f_chamado"
+			          }
+			        },
+			        "medida.numero_de_chamados": {
+			          "Target": {
+			            "Entity": "medida.numero_de_chamados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_chamado"
+			            },
+			            "Object": {
+			              "Role": "medida.numero_de_chamados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_chamados_have_numero_de_chamados"
+			        }
+			      ]
+			    },
+			    "f_chamado_has_medida_tempo_médio_atendimento_dias_não_úteis": {
+			      "Binding": {
+			        "ConceptualEntity": "fChamados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_chamado": {
+			          "Target": {
+			            "Entity": "f_chamado"
+			          }
+			        },
+			        "medida.tempo_médio_atendimento_dias_não_úteis": {
+			          "Target": {
+			            "Entity": "medida.tempo_médio_atendimento_dias_não_úteis"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_chamado"
+			            },
+			            "Object": {
+			              "Role": "medida.tempo_médio_atendimento_dias_não_úteis"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_chamados_have_tempo_médio_atendimento_dias_não_úteis"
+			        }
+			      ]
+			    },
+			    "f_chamado_has_medida_tempo_médio_atendimento_dias_úteis": {
+			      "Binding": {
+			        "ConceptualEntity": "fChamados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_chamado": {
+			          "Target": {
+			            "Entity": "f_chamado"
+			          }
+			        },
+			        "medida.tempo_médio_atendimento_dias_úteis": {
+			          "Target": {
+			            "Entity": "medida.tempo_médio_atendimento_dias_úteis"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_chamado"
+			            },
+			            "Object": {
+			              "Role": "medida.tempo_médio_atendimento_dias_úteis"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_chamados_have_tempo_médio_atendimento_dias_úteis"
+			        }
+			      ]
+			    },
+			    "f_chamado_has_medida_tempo_médio_atendimento": {
+			      "Binding": {
+			        "ConceptualEntity": "fChamados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_chamado": {
+			          "Target": {
+			            "Entity": "f_chamado"
+			          }
+			        },
+			        "medida.tempo_médio_atendimento": {
+			          "Target": {
+			            "Entity": "medida.tempo_médio_atendimento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_chamado"
+			            },
+			            "Object": {
+			              "Role": "medida.tempo_médio_atendimento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_chamados_have_tempo_médio_atendimento"
+			        }
+			      ]
+			    },
+			    "f_acoes_chamado_has_medida_numero_de_acoes": {
+			      "Binding": {
+			        "ConceptualEntity": "fAcoesChamado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_acoes_chamado": {
+			          "Target": {
+			            "Entity": "f_acoes_chamado"
+			          }
+			        },
+			        "medida.numero_de_acoes": {
+			          "Target": {
+			            "Entity": "medida.numero_de_acoes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_acoes_chamado"
+			            },
+			            "Object": {
+			              "Role": "medida.numero_de_acoes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_acoes_chamados_have_numero_de_acoes"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_dia_util": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.dia_util": {
+			          "Target": {
+			            "Entity": "d_calendario.dia_util"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.dia_util"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_dia_utils"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_nome_dia_da_semana_abrev": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.nome_dia_da_semana_abrev": {
+			          "Target": {
+			            "Entity": "d_calendario.nome_dia_da_semana_abrev"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.nome_dia_da_semana_abrev"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_nome_dia_da_semana_abrevs"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_nome_dia_da_semana": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.nome_dia_da_semana": {
+			          "Target": {
+			            "Entity": "d_calendario.nome_dia_da_semana"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.nome_dia_da_semana"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_nome_dia_da_semanas"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_dia_da_semana": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.dia_da_semana": {
+			          "Target": {
+			            "Entity": "d_calendario.dia_da_semana"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.dia_da_semana"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_dia_da_semanas"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.dia": {
+			          "Target": {
+			            "Entity": "d_calendario.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_dias"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_nome_mes_abrev": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.nome_mes_abrev": {
+			          "Target": {
+			            "Entity": "d_calendario.nome_mes_abrev"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.nome_mes_abrev"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_nome_mes_abrevs"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_nome_me": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.nome_me": {
+			          "Target": {
+			            "Entity": "d_calendario.nome_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.nome_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_nome_me"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_mes_numero": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.mes_numero": {
+			          "Target": {
+			            "Entity": "d_calendario.mes_numero"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.mes_numero"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_mes_numeros"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.ano": {
+			          "Target": {
+			            "Entity": "d_calendario.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_anos"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "dCalendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.date": {
+			          "Target": {
+			            "Entity": "d_calendario.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_calendarios_have_dates"
+			        }
+			      ]
+			    },
+			    "f_chamado_has_periodo_abertura": {
+			      "Binding": {
+			        "ConceptualEntity": "fChamados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_chamado": {
+			          "Target": {
+			            "Entity": "f_chamado"
+			          }
+			        },
+			        "f_chamado.periodo_abertura": {
+			          "Target": {
+			            "Entity": "f_chamado.periodo_abertura"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_chamado"
+			            },
+			            "Object": {
+			              "Role": "f_chamado.periodo_abertura"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_chamados_have_periodo_aberturas"
+			        }
+			      ]
+			    },
+			    "f_chamado_has_hora_abertura": {
+			      "Binding": {
+			        "ConceptualEntity": "fChamados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_chamado": {
+			          "Target": {
+			            "Entity": "f_chamado"
+			          }
+			        },
+			        "f_chamado.hora_abertura": {
+			          "Target": {
+			            "Entity": "f_chamado.hora_abertura"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_chamado"
+			            },
+			            "Object": {
+			              "Role": "f_chamado.hora_abertura"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_chamados_have_hora_aberturas"
+			        }
+			      ]
+			    },
+			    "f_chamado_has_tempo_atendimento": {
+			      "Binding": {
+			        "ConceptualEntity": "fChamados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_chamado": {
+			          "Target": {
+			            "Entity": "f_chamado"
+			          }
+			        },
+			        "f_chamado.tempo_atendimento": {
+			          "Target": {
+			            "Entity": "f_chamado.tempo_atendimento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_chamado"
+			            },
+			            "Object": {
+			              "Role": "f_chamado.tempo_atendimento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_chamados_have_tempo_atendimentos"
+			        }
+			      ]
+			    },
+			    "f_chamado_has_data_abertura": {
+			      "Binding": {
+			        "ConceptualEntity": "fChamados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_chamado": {
+			          "Target": {
+			            "Entity": "f_chamado"
+			          }
+			        },
+			        "f_chamado.data_abertura": {
+			          "Target": {
+			            "Entity": "f_chamado.data_abertura"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_chamado"
+			            },
+			            "Object": {
+			              "Role": "f_chamado.data_abertura"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_chamados_have_data_aberturas"
+			        }
+			      ]
+			    },
+			    "f_chamado_has_ID_chamado": {
+			      "Binding": {
+			        "ConceptualEntity": "fChamados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_chamado": {
+			          "Target": {
+			            "Entity": "f_chamado"
+			          }
+			        },
+			        "f_chamado.ID_chamado": {
+			          "Target": {
+			            "Entity": "f_chamado.ID_chamado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_chamado"
+			            },
+			            "Object": {
+			              "Role": "f_chamado.ID_chamado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_chamados_have_ID_chamados"
+			        }
+			      ]
+			    },
+			    "f_acoes_chamado_has_duracao_minuto": {
+			      "Binding": {
+			        "ConceptualEntity": "fAcoesChamado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_acoes_chamado": {
+			          "Target": {
+			            "Entity": "f_acoes_chamado"
+			          }
+			        },
+			        "f_acoes_chamado.duracao_minuto": {
+			          "Target": {
+			            "Entity": "f_acoes_chamado.duracao_minuto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_acoes_chamado"
+			            },
+			            "Object": {
+			              "Role": "f_acoes_chamado.duracao_minuto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_acoes_chamados_have_duracao_minutos"
+			        }
+			      ]
+			    },
+			    "f_acoes_chamado_has_ID_chamado": {
+			      "Binding": {
+			        "ConceptualEntity": "fAcoesChamado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_acoes_chamado": {
+			          "Target": {
+			            "Entity": "f_acoes_chamado"
+			          }
+			        },
+			        "f_acoes_chamado.ID_chamado": {
+			          "Target": {
+			            "Entity": "f_acoes_chamado.ID_chamado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_acoes_chamado"
+			            },
+			            "Object": {
+			              "Role": "f_acoes_chamado.ID_chamado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "f_acoes_chamados_have_ID_chamados"
+			        }
+			      ]
+			    },
+			    "d_categoria_has_categoria_pai": {
+			      "Binding": {
+			        "ConceptualEntity": "dCategorias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_categoria": {
+			          "Target": {
+			            "Entity": "d_categoria"
+			          }
+			        },
+			        "d_categoria.categoria_pai": {
+			          "Target": {
+			            "Entity": "d_categoria.categoria_pai"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_categoria"
+			            },
+			            "Object": {
+			              "Role": "d_categoria.categoria_pai"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_categorias_have_categoria_pais"
+			        }
+			      ]
+			    },
+			    "d_categoria_has_nome_categoria": {
+			      "Binding": {
+			        "ConceptualEntity": "dCategorias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_categoria": {
+			          "Target": {
+			            "Entity": "d_categoria"
+			          }
+			        },
+			        "d_categoria.nome_categoria": {
+			          "Target": {
+			            "Entity": "d_categoria.nome_categoria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_categoria"
+			            },
+			            "Object": {
+			              "Role": "d_categoria.nome_categoria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_categorias_have_nome_categorias"
+			        }
+			      ]
+			    },
+			    "d_categoria_has_categoria_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "dCategorias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_categoria": {
+			          "Target": {
+			            "Entity": "d_categoria"
+			          }
+			        },
+			        "d_categoria.categoria_ID": {
+			          "Target": {
+			            "Entity": "d_categoria.categoria_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_categoria"
+			            },
+			            "Object": {
+			              "Role": "d_categoria.categoria_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_categorias_have_categoria_ID"
+			        }
+			      ]
+			    },
+			    "d_analista_has_foto_URL": {
+			      "Binding": {
+			        "ConceptualEntity": "dAnalistas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_analista": {
+			          "Target": {
+			            "Entity": "d_analista"
+			          }
+			        },
+			        "d_analista.foto_URL": {
+			          "Target": {
+			            "Entity": "d_analista.foto_URL"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_analista"
+			            },
+			            "Object": {
+			              "Role": "d_analista.foto_URL"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_analistas_have_foto_URLs"
+			        }
+			      ]
+			    },
+			    "d_analista_has_nome_analista": {
+			      "Binding": {
+			        "ConceptualEntity": "dAnalistas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_analista": {
+			          "Target": {
+			            "Entity": "d_analista"
+			          }
+			        },
+			        "d_analista.nome_analista": {
+			          "Target": {
+			            "Entity": "d_analista.nome_analista"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_analista"
+			            },
+			            "Object": {
+			              "Role": "d_analista.nome_analista"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_analistas_have_nome_analistas"
+			        }
+			      ]
+			    },
+			    "d_analista_has_analista_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "dAnalistas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_analista": {
+			          "Target": {
+			            "Entity": "d_analista"
+			          }
+			        },
+			        "d_analista.analista_ID": {
+			          "Target": {
+			            "Entity": "d_analista.analista_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_analista"
+			            },
+			            "Object": {
+			              "Role": "d_analista.analista_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_analistas_have_analista_ID"
+			        }
+			      ]
+			    },
+			    "d_acoe_has_tipo_acao": {
+			      "Binding": {
+			        "ConceptualEntity": "dAcoes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_acoe": {
+			          "Target": {
+			            "Entity": "d_acoe"
+			          }
+			        },
+			        "d_acoe.tipo_acao": {
+			          "Target": {
+			            "Entity": "d_acoe.tipo_acao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_acoe"
+			            },
+			            "Object": {
+			              "Role": "d_acoe.tipo_acao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_acoes_have_tipo_acaos"
+			        }
+			      ]
+			    },
+			    "d_acoe_has_acao_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "dAcoes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_acoe": {
+			          "Target": {
+			            "Entity": "d_acoe"
+			          }
+			        },
+			        "d_acoe.acao_ID": {
+			          "Target": {
+			            "Entity": "d_acoe.acao_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_acoe"
+			            },
+			            "Object": {
+			              "Role": "d_acoe.acao_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "d_acoes_have_acao_ID"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
 			}
 		contentType: json
 

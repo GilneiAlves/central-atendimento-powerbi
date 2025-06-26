@@ -21,6 +21,19 @@
           }
         }
       }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
     ]
   },
   "resourcePackages": [
@@ -52,6 +65,31 @@
         {
           "name": "background_A__es_Varia__es6028885282039383.png",
           "path": "background_A__es_Varia__es6028885282039383.png",
+          "type": "Image"
+        },
+        {
+          "name": "LogoMakr_1cIxvZ23720699443943816.png",
+          "path": "LogoMakr_1cIxvZ23720699443943816.png",
+          "type": "Image"
+        },
+        {
+          "name": "LogoMakr_8FFwZQ8615510283154488.png",
+          "path": "LogoMakr_8FFwZQ8615510283154488.png",
+          "type": "Image"
+        },
+        {
+          "name": "TICKET47980076707512254.png",
+          "path": "TICKET47980076707512254.png",
+          "type": "Image"
+        },
+        {
+          "name": "17-51210128229007818523.png",
+          "path": "17-51210128229007818523.png",
+          "type": "Image"
+        },
+        {
+          "name": "tl_19176161132387447.png",
+          "path": "tl_19176161132387447.png",
           "type": "Image"
         }
       ]

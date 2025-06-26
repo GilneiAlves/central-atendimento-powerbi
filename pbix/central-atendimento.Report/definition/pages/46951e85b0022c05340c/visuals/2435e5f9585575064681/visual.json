@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "2435e5f9585575064681",
+  "position": {
+    "x": 0,
+    "y": 4.6284935241990439,
+    "z": 1000,
+    "height": 63.888888888888886,
+    "width": 63.888888888888886,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "image",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "TICKET47980076707512254.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "fc8dbb7f94b1dc99a879",
+  "howCreated": "InsertVisualButton"
+}
